@@ -9,6 +9,7 @@ study-project/
   └── 01_basic_routing.py    # 基本ルーティング
   └── 02_path_parameters.py    # パスパラメータ
   └── 03_query_parameters.py    # クエリパラメータ
+  └── 04_request_body.py    # リクエストボディ
 ```
 
 ## 実行方法
