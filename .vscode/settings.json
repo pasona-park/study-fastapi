@@ -1,5 +1,0 @@
-{
-    "python.defaultInterpreterPath": "/Users/jupark/.pyenv/shims/python",
-    "python.analysis.extraPaths": [],
-    "python.analysis.typeCheckingMode": "basic"
-}
