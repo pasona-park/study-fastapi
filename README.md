@@ -5,7 +5,7 @@ FastAPI公式チュートリアル（https://fastapi.tiangolo.com/tutorial/）�
 
 ## 📁 プロジェクト構成
 ```
-study-project/
+fastapi-tutorial/
   └── 01_basic_routing.py    # 基本ルーティング
   └── 02_path_parameters.py    # パスパラメータ
   └── 03_query_parameters.py    # クエリパラメータ
