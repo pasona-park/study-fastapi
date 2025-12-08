@@ -1,2 +1,4 @@
-fastapi==0.123.1
-uvicorn==0.38.0
+fastapi
+uvicorn[standard]
+sqlalchemy
+python-multipart
