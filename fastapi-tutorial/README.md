@@ -1,7 +1,7 @@
-FastAPI学習用リポジトリ
+FastAPI学習用
 
 ## 📖 概要
-FastAPI公式チュートリアル（https://fastapi.tiangolo.com/tutorial/）を参考に学習した内容を、機能別にファイルを分けて整理しています。
+FastAPI公式チュートリアル（https://fastapi.tiangolo.com/tutorial/）を参考に学習した内容を、内容別にファイルを分けて整理しています。
 
 ## 📁 プロジェクト構成
 ```
@@ -22,9 +22,6 @@ fastapi-tutorial/
   └── 14_header_parameters.py                  # ヘッダーパラメータ
   └── 15_cookie_parameter_models.py            # クッキーパラメータモデル
   └── 16_header_parameter_models.py            # ヘッダーパラメータモデル
-
-sqlalchemy/
-  └── 01_crud.py    # SQL AlchemyのCRUDテスト実行
 ```
 
 ## 実行方法
@@ -39,3 +36,18 @@ uvicorn {ファイル名}:app --reload
 uvicorn 01_basic_routing:app --reload
 uvicorn 02_path_parameters:app --reload
 ```
+
+## SQLAlchemy Tutorial (Docker環境)
+sqlalchemy-tutorialディレクトリでDockerを使用したSQLAlchemy学習環境を提供しています。
+
+**起動方法：**
+```bash
+cd sqlalchemy-tutorial
+make upd
+```
+
+**アクセス先：**
+- APIドキュメント: http://localhost:8001/docs
+- Adminer (DB管理): http://localhost:8081
+
+詳細は[sqlalchemy-tutorial/README.md](sqlalchemy-tutorial/README.md)を参照してください。
