@@ -4,7 +4,7 @@ from sqlalchemy import create_engine
 from sqlalchemy.orm import declarative_base, sessionmaker
 
 DATABASE_URL = os.getenv(
-    "DATABASE_URL", "mysql+pymysql://tutorial:tutorial@db:3306/tutorial"
+    "DATABASE_URL", "sqlite:///./test.db"
 )
 
 engine = create_engine(DATABASE_URL)

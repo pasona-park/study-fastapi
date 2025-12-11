@@ -2,6 +2,7 @@ from database import get_db
 from fastapi import APIRouter, Depends, HTTPException
 from pydantic import BaseModel
 from sqlalchemy.orm import Session
+from typing import Union
 
 import services
 
@@ -12,8 +13,8 @@ class UserCreate(BaseModel):
 
 
 class UserUpdate(BaseModel):
-    name: str | None = None
-    fullname: str | None = None
+    name: Union[str, None] = None
+    fullname: Union[str, None] = None
 
 router = APIRouter()
 
