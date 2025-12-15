@@ -22,11 +22,23 @@ fastapi-tutorial/
   └── 14_header_parameters.py                  # ヘッダーパラメータ
   └── 15_cookie_parameter_models.py            # クッキーパラメータモデル
   └── 16_header_parameter_models.py            # ヘッダーパラメータモデル
+  └── 17_response_model_return_type.py         # レスポンスモデル戻り値型
+  └── 18_extra_models.py                       # 追加モデル
+  └── 19_response_status_code.py               # レスポンスステータスコード
+  └── 20_form_data.py                          # フォームデータ
+  └── 21_form_models.py                        # フォームモデル
+  └── 22_request_files.py                      # リクエストファイル
+  └── 23_request_forms_and_files.py            # リクエストフォームとファイル
+  └── 24_handling_errors.py                    # エラーハンドリング
+  └── 25_path_operation_configuration.py       # パス操作設定
+  └── 26_JSON_compatible_encoder.py            # JSON互換エンコーダー
+  └── 27_body_updates.py                       # ボディ更新
+  └── 28_dependencies.py                       # 依存性システム完全ガイド
 ```
 
-## 実行方法
+## 🚀 実行方法
 各ファイルを以下のコマンドで実行できます：
-```
+```bash
 uvicorn {ファイル名}:app --reload  
 ```
 ※ ファイル名は拡張子(.py)を除いて指定してください
@@ -34,20 +46,9 @@ uvicorn {ファイル名}:app --reload
 **実行例：**
 ```bash
 uvicorn 01_basic_routing:app --reload
-uvicorn 02_path_parameters:app --reload
-```
-
-## SQLAlchemy Tutorial (Docker環境)
-sqlalchemy-tutorialディレクトリでDockerを使用したSQLAlchemy学習環境を提供しています。
-
-**起動方法：**
-```bash
-cd sqlalchemy-tutorial
-make upd
+uvicorn 28_dependencies:app --reload
 ```
 
 **アクセス先：**
-- APIドキュメント: http://localhost:8001/docs
-- Adminer (DB管理): http://localhost:8081
-
-詳細は[sqlalchemy-tutorial/README.md](sqlalchemy-tutorial/README.md)を参照してください。
+- APIドキュメント: http://localhost:8000/docs
+- 代替ドキュメント: http://localhost:8000/redoc
